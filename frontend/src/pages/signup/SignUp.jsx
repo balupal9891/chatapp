@@ -26,20 +26,20 @@ const SignUp = () => {
 
 	return (
 		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
-			<div className='w-full p-6 rounded-lg shadow-md bg-gray-300 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
+			<div className='w-full p-6 rounded-lg shadow-md bg-gray-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
 				<h1 className='text-3xl font-semibold text-center text-gray-300'>
 					Sign Up <span className='text-blue-500'> ChatApp</span>
 				</h1>
 
 				<form onSubmit={handleSubmit}>
 					<div>
-						<label className='label '>
-							<span className='text-base label-text '>Full Name</span>
+						<label className='label  text-gray-600'>
+							<span className='text-base label-text'>Full Name</span>
 						</label>
 						<input
 							type='text'
 							placeholder='Full Name'
-							className='w-full input input-bordered rounded-lg bg-gray-500  h-10 p-2'
+							className='w-full input input-bordered rounded-lg  h-10 p-2'
 							value={inputs.fullName}
 							onChange={(e) => setInputs({ ...inputs, fullName: e.target.value })}
 						/>
@@ -52,7 +52,7 @@ const SignUp = () => {
 						<input
 							type='text'
 							placeholder='username'
-							className='w-full input input-bordered bg-gray-400 h-10'
+							className='w-full input input-bordered  h-10'
 							value={inputs.username}
 							onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
 						/>
